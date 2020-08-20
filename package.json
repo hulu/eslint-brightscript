@@ -1,0 +1,23 @@
+{
+  "name": "@hulu/eslint-brightscript",
+  "version": "1.0.0",
+  "description": "Lint your Brightscript code with brs and eslint!",
+  "main": "dist/index.js",
+  "author": "Hulu",
+  "license": "Apache-2.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run compile",
+    "clean": "lerna run clean",
+    "test": "lerna run test"
+  },
+  "dependencies": {
+    "lerna": "^3.22.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

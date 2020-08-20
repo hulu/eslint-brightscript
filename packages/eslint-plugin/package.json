@@ -1,0 +1,30 @@
+{
+  "name": "@hulu/eslint-plugin-brightscript",
+  "version": "0.7.0",
+  "description": "Brightscript plugin for ESLint",
+  "main": "dist/index.js",
+  "author": "Hulu",
+  "license": "Apache-2.0",
+  "private": false,
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "compile": "tsc -b tsconfig.json",
+    "watch": "tsc -b tsconfig.json -w",
+    "clean": "rimraf ./dist",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "brs": "^0.43.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "jest": "^26.4.1",
+    "typescript": "^4.0.2"
+  }
+}
