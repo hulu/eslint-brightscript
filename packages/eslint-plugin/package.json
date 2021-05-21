@@ -1,6 +1,6 @@
 {
   "name": "@hulu/eslint-plugin-brightscript",
-  "version": "0.7.0",
+  "version": "0.1.0",
   "description": "Brightscript plugin for ESLint",
   "main": "dist/index.js",
   "author": "Hulu",
