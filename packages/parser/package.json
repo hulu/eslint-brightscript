@@ -1,6 +1,6 @@
 {
   "name": "@hulu/eslint-parser-brightscript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "parser that converts a brs AST to estree.",
   "main": "dist/index.js",
   "author": "Hulu",
