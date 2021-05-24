@@ -26,5 +26,9 @@
     "eslint": "^7.7.0",
     "jest": "^26.4.1",
     "typescript": "^4.0.2"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "5662d4587d9dcba56de4a02f4b240c261efc185a"
 }

@@ -18,5 +18,9 @@
   },
   "dependencies": {
     "brs": "nightly"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "5662d4587d9dcba56de4a02f4b240c261efc185a"
 }
