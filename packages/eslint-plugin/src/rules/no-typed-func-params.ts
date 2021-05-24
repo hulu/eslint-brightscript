@@ -26,7 +26,7 @@ export let noTypedFuncParams = {
                     if (param.type.kind !== ValueKind.Dynamic) {
                         context.report({
                             loc: param.location,
-                            messageId: "noTypedFuncParamsId"
+                            messageId: "noTypedFuncParamsId",
                         });
                     }
                 });

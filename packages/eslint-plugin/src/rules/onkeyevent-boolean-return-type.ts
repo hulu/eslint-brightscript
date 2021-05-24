@@ -6,8 +6,7 @@ export let onKeyEventBooleanReturnType = {
     meta: {
         type: "problem",
         messages: {
-            onKeyEventBooleanReturnTypeId:
-                "onKeyEvent function should return a boolean type.",
+            onKeyEventBooleanReturnTypeId: "onKeyEvent function should return a boolean type.",
         },
         docs: {
             description: "onKeyEvent function should return a boolean type.",

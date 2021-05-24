@@ -26,12 +26,11 @@ export let noUnsafeConditions = {
         let inCondition = false;
 
         function inBinaryExpression(node: any) {
-            return node.parent?.type === "Binary"
+            return node.parent?.type === "Binary";
         }
 
         function isBooleanBinaryExpression(node: any) {
-            return node.token.kind === lexeme.And ||
-                node.token.kind === lexeme.Or;
+            return node.token.kind === lexeme.And || node.token.kind === lexeme.Or;
         }
 
         function reportIfUnsafeExpression(node: Expression) {
@@ -56,13 +55,23 @@ export let noUnsafeConditions = {
         }
 
         return {
-            If(node: IfStmt) { inCondition = true; },
-            "If:exit": (node: any) => { inCondition = false; },
+            If(node: IfStmt) {
+                inCondition = true;
+            },
+            "If:exit": (node: any) => {
+                inCondition = false;
+            },
 
-            ElseIf(node: ElseIfStmt) { inCondition = true; },
-            "ElseIf:exit": (node: any) => {inCondition = false; },
+            ElseIf(node: ElseIfStmt) {
+                inCondition = true;
+            },
+            "ElseIf:exit": (node: any) => {
+                inCondition = false;
+            },
 
-            Block(node: BlockStmt) { inCondition = false; },
+            Block(node: BlockStmt) {
+                inCondition = false;
+            },
 
             Variable(node: Expression) {
                 return reportIfUnsafeExpression(node);
