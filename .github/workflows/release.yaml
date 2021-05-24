@@ -27,7 +27,7 @@
         { run: "yarn lerna run compile" },
         { run: "yarn lerna run test" },
         {
-          run: "node_modules/.bin/lerna publish from-package",
+          run: "node_modules/.bin/lerna publish from-package --yes",
           env: {
             NODE_AUTH_TOKEN: "${{ secrets.NPM_PUBLISH_TOKEN }}"
           }
