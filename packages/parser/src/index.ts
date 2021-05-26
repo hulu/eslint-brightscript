@@ -1,14 +1,13 @@
-import { parser, lexer, preprocessor } from "brs"
-
+import { parser, lexer, preprocessor } from "brs";
 
 export function parseForESLint(code: string, options: object): object {
     return {
         ast: parse(code, options),
-        services: function() {
+        services: function () {
             console.log("@hulu/eslint-parser-brightscript invoked");
         },
         scopeManager: null,
-        visitorKeys: null
+        visitorKeys: null,
     };
 }
 

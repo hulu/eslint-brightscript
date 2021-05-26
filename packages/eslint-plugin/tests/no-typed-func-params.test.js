@@ -1,6 +1,4 @@
-const rule = require("../dist/rules").rules[
-    "no-typed-func-params"
-];
+const rule = require("../dist/rules").rules["no-typed-func-params"];
 const RuleTester = require("eslint").RuleTester;
 
 test("no-typed-func-params defined", () => {
@@ -8,7 +6,7 @@ test("no-typed-func-params defined", () => {
 });
 
 let tester = new RuleTester({
-    parser: require.resolve('@hulu/eslint-parser-brightscript')
+    parser: require.resolve("@hulu/eslint-parser-brightscript"),
 });
 
 tester.run("no-typed-func-params", rule, {
@@ -17,13 +15,13 @@ tester.run("no-typed-func-params", rule, {
             code: `
                 sub processInput(input) 
                 end sub
-            `
+            `,
         },
         {
             code: `
                 sub processDynamicInput(input as dynamic) 
                 end sub
-            `
+            `,
         },
     ],
     invalid: [

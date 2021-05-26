@@ -6,7 +6,7 @@ test("no-unsafe-conditions defined", () => {
 });
 
 let tester = new RuleTester({
-    parser: require.resolve('@hulu/eslint-parser-brightscript')
+    parser: require.resolve("@hulu/eslint-parser-brightscript"),
 });
 
 tester.run("no-unsafe-conditions", rule, {
@@ -166,10 +166,7 @@ tester.run("no-unsafe-conditions", rule, {
                     end if
                 end if
             `,
-            errors: [
-                { messageId: "noUnsafeConditionsId" },
-                { messageId: "noUnsafeConditionsId" }
-            ],
+            errors: [{ messageId: "noUnsafeConditionsId" }, { messageId: "noUnsafeConditionsId" }],
         },
 
         // Unary
@@ -253,6 +250,5 @@ tester.run("no-unsafe-conditions", rule, {
                 { messageId: "noUnsafeConditionsId" },
             ],
         },
-
     ],
 });

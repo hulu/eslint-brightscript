@@ -1,6 +1,6 @@
 export = {
-    extends: ['./configs/base'],
+    extends: ["./configs/base"],
     rules: {
-        '@hulu/eslint-plugin-brightscript/no-set-focus-false': 'error'
-    }
+        "@hulu/eslint-plugin-brightscript/no-set-focus-false": "error",
+    },
 };

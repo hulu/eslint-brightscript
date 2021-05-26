@@ -12,12 +12,35 @@
   "scripts": {
     "build": "lerna run compile",
     "clean": "lerna run clean",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "posttest": "npm run format",
+    "format:write": "prettier --loglevel warn --write \"**/*.{js,ts}\"",
+    "format": "prettier --loglevel warn --check \"**/*.{js,ts}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "lerna": "^3.22.1"
   },
   "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": ">=2",
     "rimraf": "^3.0.2"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "prettier --write"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "printWidth": 100,
+    "overrides": [
+      {
+        "files": ["package.json", "**/package.json", "**/jest.config.js"],
+        "options": {
+          "tabWidth": 2
+        }
+      }
+    ]
   }
 }

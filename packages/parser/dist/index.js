@@ -9,7 +9,7 @@ function parseForESLint(code, options) {
             console.log("@hulu/eslint-parser-brightscript invoked");
         },
         scopeManager: null,
-        visitorKeys: null
+        visitorKeys: null,
     };
 }
 exports.parseForESLint = parseForESLint;
