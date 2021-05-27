@@ -65,3 +65,6 @@ typings/
 .vscode/
 
 dist
+
+# this project uses yarn, so no `package-lock.json`s should ever sneak in
+package-lock.json
