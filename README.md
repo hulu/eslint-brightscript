@@ -10,37 +10,32 @@ $ yarn add -D eslint
 $ npm i --save-dev eslint
 ```
 
-Make sure you have `@hulu/eslint-parser-brightscript` installed:
-```
-$ yarn add -D @hulu/eslint-parser-brightscript
-$ npm i --save-dev @hulu/eslint-parser-brightscript
-```
-
-Then install the plugin:
+Then install the parser and plugin:
 
 ```
-$ yarn add -D @hulu/eslint-plugin-brightscript
-$ npm i --save-dev @hulu/eslint-plugin-brightscript
+$ yarn add -D @hulu/eslint-parser-brightscript @hulu/eslint-plugin-brightscript
+$ npm i --save-dev @hulu/eslint-parser-brightscript @hulu/eslint-plugin-brightscript
 ```
 
 ### Usage
 Add the following to your .eslintrc to use the recommended rules.
-```
+
+```json
 {
     "plugins": ["@hulu/eslint-plugin-brightscript"],
     "extends": ["plugin:@hulu/eslint-plugin-brightscript/recommended"]
 }
 ```
 
-You can also ignore the recommended config by including the `@hulu/eslint-parser-brightscript`
-and adding specific rules manually.
+You can also ignore the recommended config by including the `@hulu/eslint-parser-brightscript` parser and
+`@hulu/eslint-plugin-brightscript` plugin and adding specific rules manually:
 
-```
+```json
 {
   "parser": "@hulu/eslint-parser-brightscript",
   "plugins": ["@hulu/eslint-plugin-brightscript"],
   "rules": {
-    "@hulu/eslint-plugin-brightscript/rule-name": "error"
+    "@hulu/brightscript/rule-name": "error"
   }
 }
 ```

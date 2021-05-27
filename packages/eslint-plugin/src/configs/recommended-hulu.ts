@@ -1,10 +1,10 @@
 export = {
     extends: ["./configs/base"],
     rules: {
-        "@hulu/eslint-plugin-brightscript/no-set-focus-false": "error",
-        "@hulu/eslint-plugin-brightscript/no-is-valid": "error",
-        "@hulu/eslint-plugin-brightscript/onkeyevent-boolean-return-type": "error",
-        "@hulu/eslint-plugin-brightscript/no-unsafe-conditions": "error",
-        "@hulu/eslint-plugin-brightscript/no-typed-func-params": "warn",
+        "@hulu/brightscript/no-set-focus-false": "error",
+        "@hulu/brightscript/no-is-valid": "error",
+        "@hulu/brightscript/onkeyevent-boolean-return-type": "error",
+        "@hulu/brightscript/no-unsafe-conditions": "error",
+        "@hulu/brightscript/no-typed-func-params": "warn",
     },
 };
