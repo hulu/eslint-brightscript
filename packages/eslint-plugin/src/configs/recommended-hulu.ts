@@ -6,5 +6,6 @@ export = {
         "@hulu/brightscript/onkeyevent-boolean-return-type": "error",
         "@hulu/brightscript/no-unsafe-conditions": "error",
         "@hulu/brightscript/no-typed-func-params": "warn",
+        "@hulu/brightscript/comment-style": ["error", "'"],
     },
 };

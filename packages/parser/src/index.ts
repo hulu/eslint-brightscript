@@ -23,7 +23,7 @@ export function parse(code: string, options: any): object {
         sourceType: "script",
         body: ast,
         tokens: [],
-        comments: [],
+        comments: scanResults.comments,
         loc: [],
         parent: null,
         range: [],

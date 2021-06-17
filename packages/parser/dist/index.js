@@ -24,7 +24,7 @@ function parse(code, options) {
         sourceType: "script",
         body: ast,
         tokens: [],
-        comments: [],
+        comments: scanResults.comments,
         loc: [],
         parent: null,
         range: [],
