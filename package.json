@@ -19,7 +19,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "4"
   },
   "devDependencies": {
     "husky": ">=6",
@@ -36,7 +36,11 @@
     "printWidth": 100,
     "overrides": [
       {
-        "files": ["package.json", "**/package.json", "**/jest.config.js"],
+        "files": [
+          "package.json",
+          "**/package.json",
+          "**/jest.config.js"
+        ],
         "options": {
           "tabWidth": 2
         }
